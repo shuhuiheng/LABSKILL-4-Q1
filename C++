@@ -1,0 +1,28 @@
+#include <iostream>;
+using namespace std;
+
+void aNumber(int number1) {
+	for(int a=0; a<=10;) {
+		cout << a <<"*"<<number1<<"="<<(a*number1)<<endl;
+		a++;
+	}
+}
+ int main(){
+ 	char choice;
+ 	
+ 	do {
+ 		int number;
+ 		cout <<"Enter number to multiply: ";
+ 		cin >>number;
+ 		
+ 		aNumber(number);
+ 		
+ 		cout << "Want to continue (y-yes / n-no): ";
+ 		cin >> choice;
+ 		
+	 }
+	  while(choice=='Y'||choice=='y');
+	 
+ 	
+ 	return 0;
+ }
